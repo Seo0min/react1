@@ -1,0 +1,92 @@
+.main {
+    width: 1200px;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 0.9rem;
+    background-color: yellowgreen;
+}
+
+
+.content-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 3rem;
+    background-color: lightgrey;
+    border-radius: 20px;
+}
+
+input {
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.plans-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.group {
+    font-size: 25px;
+}
+
+.working-content {
+    width: 250px;
+    height: 150px;
+    border: 3px solid  yellowgreen;
+    border-radius: 20px;
+    margin: 2rem 2rem 2rem 0rem;
+}
+
+.done-content {
+    width: 250px;
+    height: 150px;
+    border: 3px solid yellowgreen;
+    border-radius: 20px;
+    margin: 2rem 2rem 2rem 0rem;
+}
+
+.add-button {
+    padding: 6px;
+    width: 150px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.d-button {
+    background-color: yellowgreen;
+    border: none;
+    border-radius: 5px;
+    width: 50px;
+    height: 30px;
+    margin-right: 5px;
+
+}
+
+.c-button {
+    background-color: yellowgreen;
+    border: none;
+    border-radius: 5px;
+    width: 50px;
+    height: 30px;
+}
+
+
+
+
+
