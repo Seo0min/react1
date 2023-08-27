@@ -3,7 +3,7 @@ import './App.css';
 
 const App = () => { 
   const [plans, setPlans] = useState([
-    {id: 0, title: '독서하기', body: '한 달에 한 권', isDone: false},
+    {id: 0, title: '독서 하기', body: '한 달에 한 권', isDone: false},
     {id: 1, title: '과제 끝내기', body: '8/27까지', isDone: true}
   ]);
 
