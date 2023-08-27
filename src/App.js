@@ -19,7 +19,7 @@ const App = () => {
   }
 
   const clickAddButtonHandler = () => {
-    alert('추가되었습니다.')
+    alert('추가되었습니다!!')
     const newPlans = {
       // 새로운 형태 만들기
       id: plans.length + 1,
@@ -27,7 +27,8 @@ const App = () => {
       body,
       isDone: false
     };
-    // 배열에 더한다.
+  
+    // 배열에 더한다. 
     setPlans([...plans, newPlans]);
     setTitle('');
     setBody('');
