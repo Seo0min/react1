@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
+import AddButton from './components/AddButton';
 
 const App = () => { 
   const [plans, setPlans] = useState([
@@ -18,22 +19,7 @@ const App = () => {
     setBody(event.target.value);
   }
 
-  const clickAddButtonHandler = () => {
-    alert('추가되었습니다!!')
-    const newPlans = {
-      // 새로운 형태 만들기
-      id: plans.length + 1,
-      title,
-      body,
-      isDone: false
-    };
   
-    // 배열에 더한다. 
-    setPlans([...plans, newPlans]);
-    setTitle('');
-    setBody('');
-  };
-
   const cancelDoneButtonHandler = (id) => {
     const updatedPlans = plans.map((plan) => 
     plan.id === id ? {...plan, isDone: !plan.isDone} : plan
@@ -71,7 +57,14 @@ const App = () => {
         />
       </div>
       <div>
-        <button className = 'add-button' onClick = {clickAddButtonHandler}>추가하기</button>
+        <AddButton
+          plans={plans}
+          title={title}
+          body={body}
+          setPlans={setPlans}
+          setTitle={setTitle}
+          setBody={setBody}
+        />
       </div>
     </div>
     <div>
