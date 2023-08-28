@@ -3,6 +3,7 @@ https://todolist-jz45q6qub-seo0min.vercel.app/
 
 ### 컴포넌트 분리 
 추가하기 버튼의 컴포넌트를 AddButton.jsx에 분리하였습니다. 
+```
 import React from 'react';
 
 const AddButton = ({ plans, title, body, setPlans, setTitle, setBody }) => {
@@ -28,3 +29,4 @@ const AddButton = ({ plans, title, body, setPlans, setTitle, setBody }) => {
 };
 
 export default AddButton;
+```
