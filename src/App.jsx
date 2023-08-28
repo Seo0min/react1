@@ -47,7 +47,6 @@ const App = () => {
           value = {title} 
           onChange = {onTitleChangeHandler}
         />
-          {/* state 연결 확인 시 {title} */}
 
         &nbsp;내용 &nbsp;
         <input 
